@@ -1,1 +1,8 @@
-{"icon": "logo.png", "title": "Constructing a PCovR Map", "category": "analysis", "link": "https://scikit-cosmo.readthedocs.io/en/latest/read-only-examples/PCovR.html"}
+{
+  "title": "Constructing a PCovR Map",
+  "author": "Rose K. Cersonsky",
+  "author_email": "rose.cersonsky@gmail.com",
+  "category": "analysis",
+  "icon": "logo.png",
+  "link": "https://scikit-cosmo.readthedocs.io/en/latest/read-only-examples/PCovR.html"
+}

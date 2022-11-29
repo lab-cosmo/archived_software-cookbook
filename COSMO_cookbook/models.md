@@ -4,8 +4,8 @@ These examples cover the building of potentials from the descriptors determined 
 ## Examples
 `````{grid}
 ````{grid-item}
-[**Test Linear Fit**](examples/test_notebook/Test_linear_Fit.ipynb)
-```{figure} ./square_logo.png
+[**A Simple Linear Model**](examples/test_notebook/Test_linear_Fit.ipynb)
+```{figure} examples/test_notebook/logo.png
 ---
 class: with-border
 align: left
