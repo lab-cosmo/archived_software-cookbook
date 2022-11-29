@@ -29,6 +29,7 @@ jobs:
     # Build the book
     - name: Build the book
       run: |
+        python examples/build_examples.py
         jupyter-book build COSMO_cookbook
 
     # Deploy the book's HTML to gh-pages branch

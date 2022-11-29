@@ -1,1 +1,0 @@
-https://scikit-cosmo.readthedocs.io/en/latest/read-only-examples/PCovR.html

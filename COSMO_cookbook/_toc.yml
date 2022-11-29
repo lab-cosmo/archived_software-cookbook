@@ -1,8 +1,13 @@
-# Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
-
 format: jb-book
 root: intro
 chapters:
-- file: markdown
-- file: notebooks
+- file: descriptors
+- file: models
+  sections: 
+  - file: examples/test_notebook/Test_linear_Fit.ipynb
+- file: analysis
+  sections: 
+  - url: https://scikit-cosmo.readthedocs.io/en/latest/read-only-examples/PCovR.html
+    title: Constructing a PCovR Map [EXTERNAL]
+- file: publications
+- file: contributing
