@@ -1,4 +1,4 @@
-# COSMO_cookbook
+# COSMO cookbook
 
 The COSMO cookbook contains recipies for atomistic machine learning and modelling
 
