@@ -10,7 +10,7 @@ examples = {
     "descriptors": [],
     "models": [],
     "analysis": [],
-    "publications": [],
+    "workflows": [],
     "contributing": [],
 }
 
