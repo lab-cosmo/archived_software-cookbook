@@ -24,7 +24,7 @@ In these categories, you can choose one of **two example types**:
   - ``category``: {``descriptors``, ``models``, ``analysis``, or ``publications``}
   - ``icon``: (optional) name or url of the image to use for the TOC grid. If none is provided, we will use the lab-COSMO logo.
   - ``link``: url of the example
-3. Push your example to a new branch called `addition/{your-example-name}` and submit a pull request to `https://github.com/bananenpampe/COSMO_cookbook/pulls`.
+3. Push your example to a new branch called `addition/{your-example-name}` and [submit a pull request](https://github.com/bananenpampe/COSMO_cookbook/pulls).
 
 You're all set! We will regularly check that the url provided remains active, and will ping the `author_email` should the url return a reference error.
 
@@ -41,7 +41,7 @@ You're all set! We will regularly check that the url provided remains active, an
       - ``files``: list of file names (referential names within the folder) of the pages to display
       - ``icon``: (optional) name or url of the image to use for the TOC grid. If none is provided, we will use the lab-COSMO logo.
       - ``test_cmd``: (optional) bash command to run the tests for your example. If this is not provided, we will test all entries in ``files`` using `python` and `jupyter nbconvert`, as appropriate.
-5. Push your example to a new branch called `addition/{your-example-name}` and submit a pull request to `https://github.com/bananenpampe/COSMO_cookbook/pulls`.
+5. Push your example to a new branch called `addition/{your-example-name}` and [submit a pull request](https://github.com/bananenpampe/COSMO_cookbook/pulls).
 
 
 You're all set! We will regularly run the tests provided, and will ping the `author_email` should they return an error.
