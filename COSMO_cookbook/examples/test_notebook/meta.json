@@ -3,6 +3,5 @@
   "author": "Davide Tisi",
   "author_email": "davide.tisi@epfl.ch",
   "category": "models",
-  "icon": "logo.png",
   "files":["Test_linear_Fit.ipynb"]
 }
