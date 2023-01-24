@@ -1,0 +1,11 @@
+scikit-cosmo
+numpy
+matplotlib
+scikit-learn
+scipy
+shutil
+PIL
+io
+os
+IPython
+ipywidgets
