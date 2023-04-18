@@ -1,7 +1,0 @@
-{
-  "title": "A Simple Linear Model",
-  "author": "Davide Tisi",
-  "author_email": "davide.tisi@epfl.ch",
-  "category": "models",
-  "files":["Test_linear_Fit.ipynb"]
-}

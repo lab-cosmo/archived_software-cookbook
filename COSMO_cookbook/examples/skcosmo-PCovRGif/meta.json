@@ -1,8 +1,0 @@
-{
-  "title": "Making a Gif of PCovR Maps",
-  "author": "Rose K. Cersonsky",
-  "author_email": "rose.cersonsky@gmail.com",
-  "category": "analysis",
-  "icon": "logo.png",
-  "files": ["MakeGif.ipynb"]
-}
