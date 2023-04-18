@@ -10,12 +10,10 @@ We first import all necessary packages.
 """
 
 
-import sklearn
 import numpy as np
-from time import time
 
 import ase
-from ase.io import read, write
+from ase.io import read
 
 import skmatter
 from skmatter.sample_selection import CUR, FPS
@@ -83,7 +81,6 @@ hypersbaseline = dict(
 
 repr_bas = SphericalInvariants(**hypersbaseline)
 
-start = time()
 managers = repr_bas.transform(dataset)
 feat_vector = managers.get_features(repr_bas)
 
