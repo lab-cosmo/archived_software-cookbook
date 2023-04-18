@@ -33,7 +33,7 @@ from rascal.utils import from_dict, to_dict, CURFilter, FPSFilter, dump_obj, loa
 #
 # Load the structures
 # We read the first 100 structures of the data set using
-# `ASE https://wiki.fysik.dtu.dk/ase/`_.
+# `ASE <https://wiki.fysik.dtu.dk/ase/>`_.
 
 datasets_dir = './dataset/'
 input_file = 'input-fps.xyz'
@@ -45,6 +45,8 @@ dataset = read(data_file,':100', format='extxyz')
 N_dataset = len(dataset)
 for frame in dataset: 
     frame.wrap(eps=1.0e-12)
+nstep = len(dataset)
+n_atoms = len(dataset[0])
 
 # %%
 #
@@ -117,8 +119,7 @@ feat_vector_sparsefeat.shape
 # ---------------------------
 #
 # compute the mean-per structure descriptor
-
-feat_vector_sparsefeat = feat_vector_sparsefeat.reshape((50, n_atoms, n_sparse_feat))
+feat_vector_sparsefeat = feat_vector_sparsefeat.reshape((nstep, n_atoms, n_sparse_feat))
 
 feat_vector_sparsefeat = np.mean(feat_vector_sparsefeat, axis = 1)
 print('feature vector descriptor', feat_vector_sparsefeat.shape)
@@ -129,7 +130,10 @@ print('feature vector descriptor', feat_vector_sparsefeat.shape)
 # Atomic structure sample selection FPS and CUR
 # ---------------------------------------------
 #
-# Compute the sample selection with FPS and CUR
+# Compute the sample selection with FPS and CUR.
+# Both functions take as input the number of samples (structures) you want
+# FPS has also the index of the first selection.
+# For more info on the functions: `skmatter <https://scikit-cosmo.readthedocs.io/en/latest/selection.html>`_
 #
 
 n_samples = 15
@@ -137,10 +141,10 @@ cur = CUR(n_to_select=n_samples)
 cur.fit(feat_vector_sparsefeat)
 cur_idxs = cur.fit(feat_vector_sparsefeat).selected_idx_
 
-fps = FPS(n_to_select=n_samples, initialize=11)
+fps = FPS(n_to_select=n_samples, initialize=0)
 fps.fit(feat_vector_sparsefeat)
 fps_idxs = fps.fit(feat_vector_sparsefeat).selected_idx_
 
-print(cur_idxs)
-print(fps_idxs)
+print('indeces obtained with CUR ', cur_idxs)
+print('indeces obtained with FPS ', fps_idxs)
 

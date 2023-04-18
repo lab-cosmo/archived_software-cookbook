@@ -9,5 +9,5 @@ numpy
 
 # sample_selections
 git+https://github.com/lab-cosmo/librascal.git
-sklearn
+scikit-learn
 skmatter
