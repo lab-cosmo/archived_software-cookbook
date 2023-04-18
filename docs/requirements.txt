@@ -3,5 +3,11 @@ sphinx_rtd_theme
 sphinx-gallery
 sphinx-toggleprompt
 
+# running examples general
 matplotlib
 numpy
+
+# sample_selections
+git+https://github.com/lab-cosmo/librascal.git
+sklearn
+skmatter

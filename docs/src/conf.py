@@ -10,7 +10,7 @@ extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.todo',
               'sphinx.ext.intersphinx',
               'sphinx.ext.viewcode', 'sphinx.ext.inheritance_diagram']
 
-example_subdirs = ["mlp_models",]
+example_subdirs = ["mlp_models", "sample_selection"]
 sphinx_gallery_conf = {
     "filename_pattern": "/*",
     "examples_dirs": [f"../../examples/{p}" for p in example_subdirs],

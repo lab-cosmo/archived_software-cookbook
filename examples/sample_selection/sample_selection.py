@@ -12,6 +12,7 @@ We first import all necessary packages.
 
 import sklearn
 import numpy as np
+from time import time
 
 import ase
 from ase.io import read, write
@@ -20,8 +21,9 @@ import skmatter
 from skmatter.sample_selection import CUR, FPS
 import rascal
 from rascal.models import Kernel, train_gap_model, compute_KNM, KRR
-from rascal.representations import SphericalInvariants as SOAPs
+from rascal.representations import SphericalInvariants
 from rascal.utils import from_dict, to_dict, CURFilter, FPSFilter, dump_obj, load_obj, get_score
+
 
 
 
@@ -47,7 +49,7 @@ for frame in dataset:
 # %%
 #
 # Compute SOAP
-# -----------
+# ------------
 #
 # We construct the descriptor training data with a SOAP powerspectrum using
 
@@ -77,7 +79,7 @@ hypersbaseline = dict(
               compute_gradients=False
               )
 
-repr_bas = SOAPs(**hypersbaseline)
+repr_bas = SphericalInvariants(**hypersbaseline)
 
 start = time()
 managers = repr_bas.transform(dataset)
