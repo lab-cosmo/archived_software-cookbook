@@ -1,7 +1,7 @@
 COSMO Software Cookbook
 =======================
 
-[COSMO Software Cookbook](http://software-cookbook.rtfd.io/)
+`COSMO Software Cookbook <http://software-cookbook.rtfd.io/>`_
 
 .. marker-intro
 
@@ -28,4 +28,4 @@ Sometimes the doc preview from readthedocs is not correcty rendered. If somethin
 Contributors
 ------------
 
-We welcome and recognize all contributions. You can see a list of current contributors in the [contributors tab](https://github.com/lab-cosmo/software-cookbook/graphs/contributors).
+We welcome and recognize all contributions. You can see a list of current contributors in the `contributors tab <https://github.com/lab-cosmo/software-cookbook/graphs/contributors>`_.
