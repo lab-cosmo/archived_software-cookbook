@@ -5,3 +5,5 @@ sphinx-toggleprompt
 
 matplotlib
 numpy
+ipywidgets
+jupyter-sphinx

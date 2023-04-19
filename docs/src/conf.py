@@ -8,7 +8,9 @@ extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.todo',
               'sphinx.ext.autosummary', 'sphinx.ext.extlinks',
               'sphinx_gallery.gen_gallery',
               'sphinx.ext.intersphinx',
-              'sphinx.ext.viewcode', 'sphinx.ext.inheritance_diagram']
+              'sphinx.ext.viewcode', 'sphinx.ext.inheritance_diagram',
+              'jupyter_sphinx'
+              ]
 
 example_subdirs = ["mlp_models",]
 sphinx_gallery_conf = {

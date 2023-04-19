@@ -18,3 +18,11 @@ import matplotlib.pyplot as plt
 X = np.random.rand(10000)*400
 Y = 0.1*X+10.1
 Y_p = Y + np.random.randn(10000)*1.5
+
+# %%
+# widget
+
+import ipywidgets
+from IPython.display import display
+widget = ipywidgets.IntSlider()
+display(widget)
