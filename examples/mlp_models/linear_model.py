@@ -33,11 +33,28 @@ display(widget)
 # 
 # .. jupyter-execute::
 # 
-#     import ipywidgets as w
+#     import ipywidgets as widgets
 #     from IPython.display import display
 # 
-#     a = w.IntSlider()
-#     b = w.IntText()
-#     w.jslink((a, 'value'), (b, 'value'))
-#     display(a, b)
+#     a = widgets.IntSlider()
+#     display(a)
 # 
+
+# %%
+# widget
+# ------
+# if you run this on your machine it prints something
+# but inside this nbsphinx this does not work
+#
+# .. jupyter-execute::
+# 
+#     button = widgets.Button(description="Click Me!")
+#     output = widgets.Output()
+#     
+#     display(button, output)
+#     
+#     def on_button_clicked(b):
+#         with output:
+#             print("Button clicked.")
+#     
+#     button.on_click(on_button_clicked)
