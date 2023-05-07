@@ -24,6 +24,12 @@ Known issues
 
 Sometimes the doc preview from readthedocs is not correcty rendered. If something works in your local build but not in the readthedocs PR preview. It could that the issue is fixed once you merge with the main branch.
 
+To visualize the generated cookbook open in a browser the file 
+``<cookbook folder>/docs/build/html/index.html``.
+
+When you generate the examples locally all the notebook will be automatically generated
+in the folder ``<cookbook folder>/docs/src/examples/<name of the example>``
+
 
 Contributors
 ------------
