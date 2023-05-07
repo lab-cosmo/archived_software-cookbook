@@ -24,7 +24,7 @@ from skmatter import sample_selection, feature_selection
 # Load molecular data
 # -------------------
 #
-# Load 100 example Li3PS4 structures from file, reading them using
+# Load 100 example BTO structures from file, reading them using
 # `ASE <https://wiki.fysik.dtu.dk/ase/>`_.
 
 # Load a subset of structures of the example dataset
